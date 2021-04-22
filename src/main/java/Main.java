@@ -70,6 +70,9 @@ public class Main {
         System.out.println("Player 2: " + player2.getFirstName() + " " + player2.getLastName() + " Overall: " + player2.getOverall(player2));
         runSimulation(player1, player2);
     }
+    
+    
+    
     public static void runSimulation(Player player1, Player player2) {
         int p1Score = 0;
         int p2Score = 0;
@@ -99,6 +102,9 @@ public class Main {
             }
         }
     }
+    
+    
+    
     public static Player testPlayerStats (Player player) throws InvalidStatException{
         if (player.getOffense() < 25 || player.getOffense() > 99) {
             throw new InvalidStatException("The offensive rating you entered was invalid.");
@@ -108,6 +114,9 @@ public class Main {
         }
         return player;
     }
+    
+    
+    
     public static Player initializePlayer1 (Player player1) throws InvalidInputException {
         String firstName = "";
         String lastName = "";
