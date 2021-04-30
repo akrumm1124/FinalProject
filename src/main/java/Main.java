@@ -66,8 +66,8 @@ public class Main {
             System.exit(0);
         }
         
-        System.out.println("Player 1: " + player1.getFirstName() + " " + player1.getLastName() + " Overall: " + player1.getOverall(player1));
-        System.out.println("Player 2: " + player2.getFirstName() + " " + player2.getLastName() + " Overall: " + player2.getOverall(player2));
+        System.out.println("Player 1: " + player1.ToString(player1));
+        System.out.println("Player 2: " + player2.ToString(player2));
         runSimulation(player1, player2);
     }
     
